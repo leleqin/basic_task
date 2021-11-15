@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: cornflowerblue;
+        animation: move 5s infinite;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(0px, 0px);
+        }
+
+        25% {
+          transform: translateX(500px);
+        }
+
+        50% {
+          transform: translate(500px, 500px);
+        }
+
+        75% {
+          transform: translate(0px, 500px);
+        }
+
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 使用@keyframes和animation实现一个元素先水平向右移动500px，
+         然后向下移动500px，然后向左移动500px，最后向上500px回到原位，
+         5S完成动画并一直重复 -->
+    <div class="box"></div>
+  </body>
+</html>
